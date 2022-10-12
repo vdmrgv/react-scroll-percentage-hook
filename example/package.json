@@ -1,0 +1,36 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://vdmrgv.github.io/react-scroll-percentage-hook",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
+  },
+  "alias": {
+    "react": "../node_modules/react",
+    "react-dom": "../node_modules/react-dom"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/icons-material": "^5.10.9",
+    "@mui/material": "^5.10.9",
+    "react-router-dom": "^6.4.2",
+    "react-scroll-percentage-hook": "^1.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.8.5",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "gh-pages": "^4.0.0",
+    "process": "^0.11.10",
+    "typescript": "^4.8.4",
+    "vite": "^3.0.2"
+  }
+}

@@ -11,8 +11,6 @@
 # misc
 .DS_Store
 
-/example
-
 /**/.cache
 /**/.parcel-cache
 npm-debug.log*
