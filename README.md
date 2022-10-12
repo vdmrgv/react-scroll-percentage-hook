@@ -2,7 +2,6 @@
 
 [![Version Badge][npm-version-svg]][package-url]
 ![NPM license][license-image]
-![Test][test-svg]
 [![GZipped size][npm-minzip-svg]][bundlephobia-url]
 [![PRs Welcome][pr-svg]][pr-url]
 [![Downloads][downloads-image]][downloads-url]
@@ -14,12 +13,12 @@ Check out [the demo](https://vdmrgv.github.io/react-scroll-percentage-hook) for 
 
 ## Features
 
+- 🚀 **Fast** - Built with hooks and functional components only.
 - 📏 **No need to specify sizes** - No need to pass the dimensions of the component, scrollbar or element
 - 👫 **Cross-browser** - Works out-of-the-box for most browsers, regardless of version.
 - 📲 **Mobile-friendly** - Supports mobile devices and touch screens.
 - 🛠 **Written in TypeScript** - It'll fit right into your existing TypeScript
   project
-- ✅ **Fully unit tested** - `100%` test coverage
 - 💥 **Lightweight** - Around `~1kB`
 
 ## Install
@@ -56,6 +55,11 @@ const Component = () => {
 
 ## API
 
+| Name               | Description                                                          | Type          | Required | Default Value |
+| ------------------ | -------------------------------------------------------------------- | ------------- | -------- | ------------- |
+| windowScroll       | If enabled uses window scroll                                        | `boolean`     |          | `false`       |
+| onProgress         | Callback called when scrolling `({ vertical, horizontal ) => void`   | `function`    |          | `undefined`   |
+| timeout            | Timeout for for scroll handler in `ms`                               | `number`      |          | `10`          |
 
 ## Contributing
 
@@ -76,7 +80,6 @@ Code released under the [MIT License][license-url] © [Vadim Rogov](https://gith
 [pr-url]: http://makeapullrequest.com
 [downloads-image]: http://img.shields.io/npm/dm/react-scroll-percentage-hook.svg
 [downloads-url]: http://npm-stat.com/charts.html?package=react-scroll-percentage-hook
-[test-svg]: https://github.com/vdmrgv/react-scroll-percentage-hook/actions/workflows/test.yml/badge.svg
 [total-downloads-svg]: https://img.shields.io/npm/dt/react-scroll-percentage-hook.svg?style=flat
 [total-downloads-url]: https://npmcharts.com/compare/react-scroll-percentage-hook?minimal=true
 
