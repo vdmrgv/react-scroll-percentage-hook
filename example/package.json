@@ -5,9 +5,8 @@
   "homepage": "https://vdmrgv.github.io/react-scroll-percentage-hook",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
+    "start": "parcel index.html --no-cache --no-source-maps --open",
+    "build": "parcel build index.html --public-url /react-scroll-percentage-hook/",
     "predeploy": "yarn build",
     "deploy": "gh-pages -d dist"
   },
@@ -31,6 +30,6 @@
     "gh-pages": "^4.0.0",
     "process": "^0.11.10",
     "typescript": "^4.8.4",
-    "vite": "^3.0.2"
+    "parcel": "2.7.0"
   }
 }
