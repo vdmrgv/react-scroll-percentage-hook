@@ -1,0 +1,92 @@
+{
+  "name": "react-scroll-percentage-hook",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "A React hook to monitor component scroll percentage.",
+  "author": "Vadim Rogov <vadimrogovd@gmail.com>",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "prepare": "husky install",
+    "build": "rimraf dist && rollup -c",
+    "lint": "eslint 'src/**/*.{ts,tsx,js,jsx}'",
+    "lint:fix": "yarn lint --fix",
+    "prettier:check": "prettier --check 'src/**/*'",
+    "prettify": "prettier --write 'src/**/*'",
+    "ts-check": "tsc -p tsconfig.json --noEmit"
+  },
+  "lint-staged": {
+    "*.{js,json,md}": [
+      "prettier --write",
+      "git add"
+    ],
+    "*.js": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vdmrgv/react-scroll-percentage-hook.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "react-hooks",
+    "percentage",
+    "scroll percentage",
+    "progress",
+    "scroll progress",
+    "scroll",
+    "scrolling"
+  ],
+  "bugs": {
+    "url": "https://github.com/vdmrgv/react-scroll-percentage-hook/issues"
+  },
+  "homepage": "https://vdmrgv.github.io/react-scroll-percentage-hook",
+  "devDependencies": {
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.3",
+    "@babel/preset-react": "^7.17.12",
+    "@babel/preset-typescript": "^7.18.6",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.2",
+    "@rollup/plugin-node-resolve": "^14.1.0",
+    "@rollup/plugin-typescript": "^8.5.0",
+    "@types/lodash.debounce": "^4.0.7",
+    "@types/react": "^18.0.21",
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "babel-jest": "^29.1.2",
+    "eslint": "^8.24.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.31.8",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.2",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.1",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  }
+}

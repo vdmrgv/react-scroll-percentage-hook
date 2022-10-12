@@ -1,0 +1,20 @@
+# dependencies
+/**/node_modules
+
+# testing
+/coverage
+
+# production
+/**/dist
+/**/build
+
+# misc
+.DS_Store
+
+/example
+
+/**/.cache
+/**/.parcel-cache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
