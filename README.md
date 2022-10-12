@@ -19,7 +19,7 @@ Check out [the demo](https://vdmrgv.github.io/react-scroll-percentage-hook) for 
 - 📲 **Mobile-friendly** - Supports mobile devices and touch screens.
 - 🛠 **Written in TypeScript** - It'll fit right into your existing TypeScript
   project
-- 💥 **Lightweight** - Around `~1kB`
+- 💥 **Lightweight** - Around `~400B`
 
 ## Install
 
@@ -59,7 +59,8 @@ const Component = () => {
 | ------------------ | -------------------------------------------------------------------- | ------------- | -------- | ------------- |
 | windowScroll       | If enabled uses window scroll                                        | `boolean`     |          | `false`       |
 | onProgress         | Callback called when scrolling `({ vertical, horizontal ) => void`   | `function`    |          | `undefined`   |
-| timeout            | Timeout for for scroll handler in `ms`                               | `number`      |          | `10`          |
+| timeout            | Timeout for scroll handler in `ms`                                   | `number`      |          | `10`          |
+
 
 ## Contributing
 
