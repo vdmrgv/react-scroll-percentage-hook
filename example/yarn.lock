@@ -1333,10 +1333,10 @@ react-router@6.4.2:
   dependencies:
     "@remix-run/router" "1.0.2"
 
-react-scroll-percentage-hook@^1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/react-scroll-percentage-hook/-/react-scroll-percentage-hook-1.0.2.tgz#250cda449c53f17562e858b486a2694d793272a5"
-  integrity sha512-3jvtXHgBHygITFHnHw3Y65lQ62IrVyAQgki9nzQQCiImeqvWWJxKfmzliNZAh5x6rKJlwHYloi1IbNEgRmfuZw==
+react-scroll-percentage-hook@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-scroll-percentage-hook/-/react-scroll-percentage-hook-1.0.3.tgz#065b2eb5c08712fc338e61389b6cff00c6506fed"
+  integrity sha512-AhgfXpYLUfixdvUM2Y4CuYcr8LLYhSOLn4rsQIs9pfEX1P01Bsb+XFQPH08w+APw4JwWvjI/epJe7Mn4601qhA==
 
 react-transition-group@^4.4.5:
   version "4.4.5"

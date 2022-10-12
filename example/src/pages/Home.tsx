@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link, Typography } from '@mui/material';
 import { gitHubLink } from '../links';
 

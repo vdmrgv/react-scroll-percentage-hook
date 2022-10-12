@@ -1,18 +1,18 @@
 import { Typography } from '@mui/material';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import useScrollPercentage from 'react-scroll-percentage-hook';
 import ExampleCard from '../components/ExampleCard';
 import Item from '../components/Item';
 import { getSourceUrl } from '../utils';
 
 const VerticalScroll = () => {
-  const [data] = useState(new Array(100));
+  const [data] = useState(new Array(100).fill(0));
 
   const { ref, percentage } = useScrollPercentage<HTMLDivElement>();
 
   return (
     <ExampleCard title="Vertical Scroll" source={getSourceUrl('VerticalScroll')}>
-      <Typography>{percentage.vertical}</Typography>
+      <Typography>Scrolling progress: {percentage.vertical}</Typography>
       <div
         ref={ref}
         className="List"
@@ -21,11 +21,11 @@ const VerticalScroll = () => {
           width: '70vw',
           overflowX: 'auto',
           display: 'flex',
-          flexDirection: 'row',
+          flexDirection: 'column',
         }}
       >
         {data.map((_, index) => (
-          <Item key={index} index={index} className="Column" content={`${index}`} />
+          <Item key={index} index={index} className="Row" content={`${index}`} />
         ))}
       </div>
     </ExampleCard>

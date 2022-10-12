@@ -1,18 +1,25 @@
 import { Typography } from '@mui/material';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import useScrollPercentage from 'react-scroll-percentage-hook';
 import ExampleCard from '../components/ExampleCard';
 import Item from '../components/Item';
 import { getSourceUrl } from '../utils';
 
 const WindowScroll = () => {
-  const [data] = useState(new Array(100));
+  const [data] = useState(new Array(100).fill(0));
 
   const { percentage } = useScrollPercentage<HTMLDivElement>({ windowScroll: true });
 
   return (
     <ExampleCard title="Window Scroll" source={getSourceUrl('WindowScroll')}>
-      <Typography>{percentage.vertical}</Typography>
+      <Typography
+        style={{
+          position: 'fixed',
+          right: '10px',
+        }}
+      >
+        Scrolling progress: {percentage.vertical}
+      </Typography>
       <div
         className="List"
         style={{
