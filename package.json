@@ -1,6 +1,6 @@
 {
   "name": "react-scroll-percentage-hook",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "description": "A React hook to monitor component scroll percentage.",
   "author": "Vadim Rogov <vadimrogovd@gmail.com>",
