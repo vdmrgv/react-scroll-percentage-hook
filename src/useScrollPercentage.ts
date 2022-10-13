@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState } from 'react';
-import debounceFn from 'lodash.debounce';
+import debounce from 'lodash.debounce';
 
 export interface Percentage {
   vertical: number;
@@ -26,7 +26,7 @@ const useScrollPercentage = <T extends HTMLElement>(options?: UseScrollPercentag
     const container = windowScroll ? document.scrollingElement! : ref.current;
     const listener = windowScroll ? document : ref.current;
 
-    const handleScroll = () => {
+    const handleScroll = debounce(() => {
       if (mounted && container) {
         const { scrollTop, scrollHeight, clientHeight, scrollLeft, scrollWidth, clientWidth } = container;
 
@@ -41,15 +41,13 @@ const useScrollPercentage = <T extends HTMLElement>(options?: UseScrollPercentag
         setPercentage(percentage);
         onProgress?.(percentage);
       }
-    };
+    }, timeout ?? 10);
 
-    const scrollFunc = debounceFn(handleScroll, timeout ?? 10);
-
-    listener?.addEventListener('scroll', scrollFunc);
+    listener?.addEventListener('scroll', handleScroll);
 
     return () => {
       mounted = false;
-      listener?.removeEventListener('scroll', scrollFunc);
+      listener?.removeEventListener('scroll', handleScroll);
     };
   }, [onProgress, ref, timeout, windowScroll]);
 
