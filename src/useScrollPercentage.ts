@@ -30,9 +30,12 @@ const useScrollPercentage = <T extends HTMLElement>(options?: UseScrollPercentag
       if (mounted && container) {
         const { scrollTop, scrollHeight, clientHeight, scrollLeft, scrollWidth, clientWidth } = container;
 
+        const verticalProgress = Math.abs((scrollTop / (scrollHeight - clientHeight)) * 100);
+        const horizontalProgress = Math.abs((scrollLeft / (scrollWidth - clientWidth)) * 100);
+
         const percentage = {
-          vertical: Math.abs((scrollTop / (scrollHeight - clientHeight)) * 100),
-          horizontal: Math.abs((scrollLeft / (scrollWidth - clientWidth)) * 100),
+          vertical: isNaN(verticalProgress) ? 0 : verticalProgress,
+          horizontal: isNaN(horizontalProgress) ? 0 : horizontalProgress,
         };
 
         setPercentage(percentage);
