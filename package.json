@@ -65,7 +65,7 @@
     "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^10.0.1",
     "@types/lodash.debounce": "^4.0.7",
-    "@types/react": "^18.0.24",
+    "@types/react": "^18.0.26",
     "@typescript-eslint/eslint-plugin": "^5.42.0",
     "@typescript-eslint/parser": "^5.42.0",
     "babel-jest": "^29.2.2",
