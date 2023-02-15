@@ -14,12 +14,12 @@ export default [
       {
         file: pkg.main,
         format: 'cjs',
-        sourcemap: true,
+        sourcemap: false,
       },
       {
         file: pkg.module,
         format: 'esm',
-        sourcemap: true,
+        sourcemap: false,
       },
     ],
     plugins: [
@@ -27,18 +27,19 @@ export default [
       resolve(),
       babel({
         babelHelpers: 'bundled',
-        exclude: ['node_modules/**'],
+        exclude: ['**/__tests__', '**/*.test.ts', 'node_modules/**'],
       }),
       commonjs(),
       typescript({
         tsconfig: './tsconfig.json',
-        sourceMap: false,
+        exclude: ['**/__tests__', '**/*.test.ts'],
+        sourceMap: true,
       }),
       terser(),
     ],
   },
   {
-    input: 'dist/esm/index.d.ts',
+    input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     plugins: [dts()],
   },
