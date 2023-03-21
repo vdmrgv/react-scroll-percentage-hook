@@ -28,8 +28,8 @@ const WindowScroll = () => {
           flexDirection: 'column',
         }}
       >
-        {data.map((item, index) => (
-          <Item key={item} index={index} className="Row" content={item} />
+        {data.map((_, index) => (
+          <Item key={index} index={index} className="Row" content={`${index}`} />
         ))}
       </div>
     </ExampleCard>
