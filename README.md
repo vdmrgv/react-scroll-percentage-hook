@@ -63,7 +63,7 @@ const Component = () => {
 
 
 ## Supported Browsers
-`react-scroll-percentage-hook` aims to support all evergreen browsers and recent mobile browsers for iOS and Android. IE 9+ is also supported.
+`react-scroll-percentage-hook` does not have a specific API to work with, so it supports all browsers from early versions and will support all evergreen browsers and the latest mobile browsers for iOS and Android. IE 9+ is also supported.
 
 If you find a browser-specific problem, please report it.
 
