@@ -62,6 +62,11 @@ const Component = () => {
 | timeout            | Timeout for scroll handler in `ms`                                   | `number`      | ❌        | `10`          |
 
 
+## Supported Browsers
+`react-scroll-percentage-hook` aims to support all evergreen browsers and recent mobile browsers for iOS and Android. IE 9+ is also supported.
+
+If you find a browser-specific problem, please report it.
+
 ## Contributing
 
 Please read through our [contributing guidelines](https://github.com/vdmrgv/react-scroll-percentage-hook/blob/main/CONTRIBUTING.md). Included are directions for opening issues, coding standards, and notes on development.
