@@ -58,7 +58,7 @@ const Component = () => {
 | Name               | Description                                                          | Type          | Required | Default Value |
 | ------------------ | -------------------------------------------------------------------- | ------------- | :------: | ------------- |
 | windowScroll       | If enabled uses window scroll                                        | `boolean`     | ❌        | `false`       |
-| onProgress         | Callback called when scrolling `({ vertical, horizontal ) => void`   | `function`    | ❌        | `undefined`   |
+| onProgress         | Callback called when scrolling `({ vertical, horizontal }) => void`   | `function`    | ❌        | `undefined`   |
 | timeout            | Timeout for scroll handler in `ms`                                   | `number`      | ❌        | `10`          |
 
 
