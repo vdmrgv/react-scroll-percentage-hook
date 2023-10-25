@@ -73,7 +73,7 @@ Please read through our [contributing guidelines](https://github.com/vdmrgv/reac
 
 ## License
 
-Code released under the [MIT License][license-url] © [Vadim Rogov](https://github.com/vdmrgv).
+Code released under the [MIT License][license-url].
 
 [package-url]: https://npmjs.org/package/react-scroll-percentage-hook
 [npm-version-svg]: https://img.shields.io/npm/v/react-scroll-percentage-hook.svg
