@@ -14,19 +14,19 @@ code {
 }
 
 .App-logo {
-  height: 4vmin;
   pointer-events: none;
+  height: 4vmin;
   margin: 0 2vmin;
 }
 
 .App-header {
-  width: 100vw;
-  height: 60px;
   color: #fff;
   background-color: #282c34;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  width: 100vw;
+  height: 60px;
   font-size: calc(10px + 2vmin);
   display: flex;
 }
@@ -57,16 +57,16 @@ code {
 }
 
 .List {
+  border: 1px solid gray;
   min-width: 300px;
   min-height: 600px;
-  border: 1px solid gray;
 }
 
 .Row {
-  min-height: 50px;
   border-bottom: 1px solid gray;
   justify-content: center;
   align-items: center;
+  min-height: 50px;
   display: flex;
 }
 
@@ -75,11 +75,11 @@ code {
 }
 
 .Column {
-  min-width: 50px;
   writing-mode: vertical-lr;
   border-right: 1px solid gray;
   justify-content: center;
   align-items: center;
+  min-width: 50px;
   display: flex;
 }
 
@@ -88,10 +88,10 @@ code {
 }
 
 .Row-reverse {
-  min-height: 50px;
   border-top: 1px solid gray;
   justify-content: center;
   align-items: center;
+  min-height: 50px;
   display: flex;
 }
 
@@ -100,11 +100,11 @@ code {
 }
 
 .Column-reverse {
-  min-width: 50px;
   writing-mode: vertical-lr;
   border-left: 1px solid gray;
   justify-content: center;
   align-items: center;
+  min-width: 50px;
   display: flex;
 }
 
@@ -113,12 +113,12 @@ code {
 }
 
 .Cell {
-  min-width: 135px;
-  min-height: 135px;
   border-bottom: 1px solid gray;
   border-right: 1px solid gray;
   justify-content: center;
   align-items: center;
+  min-width: 135px;
+  min-height: 135px;
   display: flex;
 }
 
@@ -127,9 +127,9 @@ code {
 }
 
 .Grid {
+  border: 1px solid gray;
   min-width: 300px;
   min-height: 300px;
-  border: 1px solid gray;
 }
 
 .Grid-row {
@@ -170,10 +170,10 @@ code {
 
 .VirtualizedTable-header {
   text-align: center;
-  height: 60px;
   border-right: 1px solid gray;
   justify-content: center;
   align-items: center;
+  height: 60px;
   font-weight: 600;
   display: flex;
 }
