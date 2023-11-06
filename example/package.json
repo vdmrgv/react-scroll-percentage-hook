@@ -15,21 +15,21 @@
     "react-dom": "../node_modules/react-dom"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@emotion/styled": "^11.10.6",
-    "@mui/icons-material": "^5.11.11",
-    "@mui/material": "^5.11.13",
-    "react-router-dom": "^6.9.0",
-    "react-scroll-percentage-hook": "^1.2.0"
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.16",
+    "@mui/material": "^5.14.17",
+    "react-router-dom": "^6.18.0",
+    "react-scroll-percentage-hook": "^1.2.2"
   },
   "devDependencies": {
-    "@types/node": "^18.15.5",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "@vitejs/plugin-react": "^3.1.0",
-    "gh-pages": "^5.0.0",
-    "parcel": "2.7.0",
+    "@types/node": "^20.8.10",
+    "@types/react": "^18.2.36",
+    "@types/react-dom": "^18.2.14",
+    "@vitejs/plugin-react": "^4.1.1",
+    "gh-pages": "^6.0.0",
+    "parcel": "2.10.2",
     "process": "^0.11.10",
-    "typescript": "^5.0.2"
+    "typescript": "^5.2.2"
   }
 }
